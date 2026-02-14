@@ -6,7 +6,7 @@ resolver = "2"
 version = "0.1.0"
 edition = "2021"
 license = "GPL-3.0-only"
-repository = "https://github.com/amanverasia/estudely-send"
+repository = "https://github.com/amanverasia/estudely-beam"
 
 [workspace.dependencies]
 tokio = { version = "1", features = ["full"] }

@@ -1,4 +1,4 @@
-# estudely-send
+# estudely-beam
 
 Cross-platform file transfer app built on [magic-wormhole](https://github.com/magic-wormhole/magic-wormhole) for secure, peer-to-peer transfers using human-readable codes and end-to-end encryption.
 
@@ -21,19 +21,19 @@ cargo install --path crates/cli
 
 ```bash
 # Send a file
-estudely-send send ./document.pdf
+estudely-beam send ./document.pdf
 
 # Send text
-estudely-send text "Hello, world!"
+estudely-beam text "Hello, world!"
 
 # Receive
-estudely-send receive 7-crossover-clockwork
+estudely-beam receive 7-crossover-clockwork
 ```
 
 ## Architecture
 
 - **crates/core** - UI-agnostic core library wrapping magic-wormhole.rs
-- **crates/cli** - Command-line interface with progress bars
+- **crates/cli** - Command-line interface (`estudely-beam`) with progress bars
 - **apps/desktop** - Tauri 2.0 desktop app (React + TypeScript)
 
 ## License

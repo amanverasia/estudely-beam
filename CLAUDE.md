@@ -1,4 +1,4 @@
-# estudely-send
+# estudely-beam
 
 ## Build & Test Commands
 - `cargo build --workspace` - Build all crates
@@ -10,7 +10,7 @@
 
 ## Architecture
 - `crates/core` (estudely-core) - UI-agnostic wormhole wrapper. Progress via `Box<dyn FnMut(TransferProgress) + Send>`.
-- `crates/cli` (estudely-cli) - clap CLI with indicatif progress bars.
+- `crates/cli` (estudely-cli) - clap CLI (`estudely-beam` binary) with indicatif progress bars.
 - `apps/desktop` - Tauri 2.0 desktop app (Phase 2).
 
 ## Key Patterns

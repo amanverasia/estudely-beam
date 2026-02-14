@@ -5,7 +5,7 @@ edition.workspace = true
 license.workspace = true
 
 [[bin]]
-name = "estudely-send"
+name = "estudely-beam"
 path = "src/main.rs"
 
 [dependencies]

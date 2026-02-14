@@ -11,7 +11,7 @@ use estudely_core::{
 };
 
 #[derive(Parser)]
-#[command(name = "estudely-send", about = "Secure file transfer via wormhole codes")]
+#[command(name = "estudely-beam", about = "Secure file transfer via wormhole codes")]
 struct Cli {
     #[command(subcommand)]
     command: Commands,
@@ -81,7 +81,7 @@ async fn main() -> Result<()> {
                 |code| {
                     println!("\nWormhole code: {code}");
                     println!("On the other computer, run:\n");
-                    println!("  estudely-send receive {code}\n");
+                    println!("  estudely-beam receive {code}\n");
                 },
                 progress,
                 cancel_rx,
@@ -103,7 +103,7 @@ async fn main() -> Result<()> {
                 |code| {
                     println!("\nWormhole code: {code}");
                     println!("On the other computer, run:\n");
-                    println!("  estudely-send receive {code}\n");
+                    println!("  estudely-beam receive {code}\n");
                 },
                 cancel_rx,
             )
